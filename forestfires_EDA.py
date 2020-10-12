@@ -32,7 +32,7 @@ def preprocess(training_data, validation_data):
     validation_data /= std
     return training_data, validation_data  
   
-'''
+
 df = pd.read_csv('forestfires.csv')
 print(df.head())
 df.info()
@@ -58,7 +58,7 @@ print("How the Inputs Correlate with area\n", golden_features_list)
 for i in range(0, len(df_num.columns), 5):
     sns.pairplot(data=df_num,
                 x_vars=df_num.columns[i:i+5],
-                y_vars=['area'])'''
+                y_vars=['area'])
 
 
 
